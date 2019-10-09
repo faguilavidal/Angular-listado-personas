@@ -1,0 +1,12 @@
+<div class="card p-5 mt-3 w-50">
+    <form class="form-row" #f="ngForm" (ngSubmit)="f.form.valid && login(f)">
+        <div>
+            <input class="form-control" type="email" name="email" placeholder="Email" ngModel required>
+        </div>
+        <div>
+            <input class="form-control" type="password" name="password" placeholder="Password" ngModel required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-circle btn-lg ml-3">+</button>
+    </form>
+</div>

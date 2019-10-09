@@ -1,0 +1,15 @@
+<h5>Formulario ingreso y modificación</h5>
+<form class="form-row" #f="ngForm" (ngSubmit)="f.form.valid && onGuardarPersona()">
+    <div class="form-group col-md-4">
+        <label for="nombre" class="sr-only">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="nombreInput" required/>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="apellido" class="sr-only">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="apellidoInput" required/>
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        <button type="submit" class="btn btn-danger ml-2" *ngIf="index != null" (click)="eliminarPersona()">Eliminar</button>
+    </div>
+</form>

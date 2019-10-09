@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div>
+            <td>
+                {{indice + 1}}
+            </td>
+            <td>
+                <a [routerLink]="['/personas',indice]" [queryParams]="{modoEdicion:'1'}">{{persona.nombre}} {{persona.apellido}}</a>
+            </td>
+        </div>
+    </div>
+</div>
