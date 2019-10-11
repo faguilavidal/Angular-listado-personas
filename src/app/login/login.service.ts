@@ -19,7 +19,7 @@ export class LoginService {
             this.token = token;
             this.router.navigate(['/']);
           }
-        )
+        );
       }
     );
   }
